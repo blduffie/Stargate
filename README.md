@@ -46,7 +46,7 @@ Follow these steps to install and run Stargate on your own machine. Review [Gett
 4. **Run the API**:
 
    ```
-   dotnet run
+   dotnet run --launch-profile https
    ```
 
    By default, it listens on `http://localhost:5204` and `https://localhost:7204`. You can access Swagger at `http://localhost:5204/swagger`.
@@ -59,7 +59,7 @@ Follow these steps to install and run Stargate on your own machine. Review [Gett
 
 ## Build and Test the Angular App (If Applicable)
 
-1. Open the Angular project folder (e.g., `stargate-client`) in VS Code.
+1. Open the Angular project folder (e.g., `web-client`) in VS Code.
 2. Install dependencies:
 
    ```
