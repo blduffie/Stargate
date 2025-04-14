@@ -11,9 +11,9 @@ namespace StargateAPI.Business.Data
 
         public string Name { get; set; } = string.Empty;
 
-        public virtual AstronautDetail? AstronautDetail { get; set; }
+        // public virtual AstronautDetail? AstronautDetail { get; set; }
 
-        public virtual ICollection<AstronautDuty> AstronautDuties { get; set; } = new HashSet<AstronautDuty>();
+        // public virtual ICollection<AstronautDuty> AstronautDuties { get; set; } = new HashSet<AstronautDuty>();
 
     }
 
@@ -21,10 +21,14 @@ namespace StargateAPI.Business.Data
     {
         public void Configure(EntityTypeBuilder<Person> builder)
         {
-            builder.HasKey(x => x.Id);
-            builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.HasOne(z => z.AstronautDetail).WithOne(z => z.Person).HasForeignKey<AstronautDetail>(z => z.PersonId);
-            builder.HasMany(z => z.AstronautDuties).WithOne(z => z.Person).HasForeignKey(z => z.PersonId);
+            builder.HasKey(p => p.Id);
+            builder.Property(p => p.Id)
+                   .ValueGeneratedOnAdd();
+
+
+            builder.Property(p => p.Name)
+                   .IsRequired()
+                   .HasMaxLength(100);
         }
     }
 }
