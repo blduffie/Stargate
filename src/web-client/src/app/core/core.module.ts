@@ -1,23 +1,14 @@
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from '../shared/shared.module';
 import { HeaderComponent } from './components/header/header.component';
-import { LandingComponent } from './components/landing/landing.component';
-import { ResponseLoggingInterceptor } from 'libs/shared/src/lib/interceptors/response-logging.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SharedModule } from '@dd-lib/shared';
 
 @NgModule({
-  declarations: [HeaderComponent, LandingComponent],
-  exports: [HeaderComponent, LandingComponent],
-  imports: [BrowserAnimationsModule, BrowserModule, HttpClientModule, SharedModule],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: ResponseLoggingInterceptor,
-      multi: true,
-    },
-  ],
+  declarations: [HeaderComponent],
+  exports: [HeaderComponent],
+  imports: [BrowserAnimationsModule, HttpClientModule, BrowserModule, SharedModule],
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() core: CoreModule) {

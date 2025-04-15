@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -93,4 +93,11 @@ import { IsBeforeDatePipe } from './utilities/is-before-date.pipe';
     DatePipe,
   ],
 })
-export class SharedModule {}
+export class SharedModule {
+  static forRoot(): ModuleWithProviders<NgModule> {
+    return {
+      ngModule: SharedModule,
+      providers: [],
+    };
+  }
+}

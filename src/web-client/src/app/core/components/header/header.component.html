@@ -1,11 +1,14 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-
-@Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [],
-  template: `<p>header works!</p>`,
-  styleUrl: './header.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-})
-export class HeaderComponent { }
+<mat-toolbar color="primary">
+  <span>Stargate </span>
+  <span class="spacer"></span>
+  <a mat-button routerLink="/">Home</a>
+  <a mat-button routerLink="/people">About</a>
+  <a mat-button routerLink="/astronauts">Contact</a>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/settings">Settings</button>
+    <button mat-menu-item routerLink="/profile">Profile</button>
+  </mat-menu>
+</mat-toolbar>
