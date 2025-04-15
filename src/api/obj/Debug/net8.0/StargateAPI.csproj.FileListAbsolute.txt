@@ -269,3 +269,6 @@
 /Users/bronwyn/Code/BAM/Stargate/src/api/obj/Debug/net8.0/StargateAPI.pdb
 /Users/bronwyn/Code/BAM/Stargate/src/api/obj/Debug/net8.0/StargateAPI.genruntimeconfig.cache
 /Users/bronwyn/Code/BAM/Stargate/src/api/obj/Debug/net8.0/ref/StargateAPI.dll
+C:\Users\Bronwyn\source\repos\blduffie\Stargate\src\api\obj\Debug\net8.0\StargateAPI.dll
+C:\Users\Bronwyn\source\repos\blduffie\Stargate\src\api\obj\Debug\net8.0\refint\StargateAPI.dll
+C:\Users\Bronwyn\source\repos\blduffie\Stargate\src\api\obj\Debug\net8.0\StargateAPI.pdb
