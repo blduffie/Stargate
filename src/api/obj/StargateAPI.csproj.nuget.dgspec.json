@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bronwyn/Code/BAM/Stargate/src/api/StargateAPI.csproj": {}
+    "C:\\Users\\Bronwyn\\source\\repos\\blduffie\\BAM\\Stargate\\src\\api\\StargateAPI.csproj": {}
   },
   "projects": {
-    "/Users/bronwyn/Code/BAM/Stargate/src/api/StargateAPI.csproj": {
+    "C:\\Users\\Bronwyn\\source\\repos\\blduffie\\BAM\\Stargate\\src\\api\\StargateAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bronwyn/Code/BAM/Stargate/src/api/StargateAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Bronwyn\\source\\repos\\blduffie\\BAM\\Stargate\\src\\api\\StargateAPI.csproj",
         "projectName": "StargateAPI",
-        "projectPath": "/Users/bronwyn/Code/BAM/Stargate/src/api/StargateAPI.csproj",
-        "packagesPath": "/Users/bronwyn/.nuget/packages/",
-        "outputPath": "/Users/bronwyn/Code/BAM/Stargate/src/api/obj/",
+        "projectPath": "C:\\Users\\Bronwyn\\source\\repos\\blduffie\\BAM\\Stargate\\src\\api\\StargateAPI.csproj",
+        "packagesPath": "C:\\Users\\Bronwyn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bronwyn\\source\\repos\\blduffie\\BAM\\Stargate\\src\\api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/bronwyn/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bronwyn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -104,20 +110,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -126,7 +118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
